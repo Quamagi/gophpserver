@@ -1,4 +1,3 @@
- GoPhpServer body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; } h1, h2, h3 { color: #333; } code { background-color: #f5f5f5; padding: 2px 4px; border-radius: 4px; }
 
 GoPhpServer
 ===========
