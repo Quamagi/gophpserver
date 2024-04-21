@@ -37,6 +37,13 @@ func handleRequest(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// Si la ruta solicitada es "/check_mysql.php", verificar la extensión de MySQL
+	if r.URL.Path == "/check_mysql.php" {
+		scriptPath := baseDir + "\\check_mysql.php"
+		serveScript(w, r, scriptPath)
+		return
+	}
+
 	// Para otras rutas, servir el archivo solicitado
 	scriptPath := baseDir + r.URL.Path
 	serveScript(w, r, scriptPath)
